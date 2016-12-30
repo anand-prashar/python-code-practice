@@ -37,6 +37,7 @@ def repeatedSubstringPattern(userStr):
     print charCountDict
     
     assumedSample = userStr[0: assumedSampleLength ]
+    print assumedSample
     if assumedSample == userStr: return False
     for c in assumedSample:
         charCountDict[c]  -= 1
@@ -51,4 +52,4 @@ def repeatedSubstringPattern(userStr):
     return True                  
     
 
-print repeatedSubstringPattern('')    
+print repeatedSubstringPattern('ababaababa')    
